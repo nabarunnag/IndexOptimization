@@ -1,0 +1,791 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cache
+    xmlns="http://geode.apache.org/schema/cache"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://geode.apache.org/schema/cache http://geode.apache.org/schema/cache/cache-1.0.xsd"
+    version="1.0"
+    is-server="true">
+  <cache-server port="20500" max-threads="50" maximum-message-count="100000" load-poll-interval="2000"/>
+  <disk-store name="segmentHistoryDiskStore" time-interval="9999" queue-size="50">
+    <disk-dirs>
+      <disk-dir dir-size="1000000">/local/data/scratch/p2iconcertgfdev/diskstore/gsamfi-dev-perf</disk-dir>
+    </disk-dirs>
+  </disk-store>
+  <disk-store name="basketDiskStore" time-interval="9999" queue-size="50">
+    <disk-dirs>
+      <disk-dir dir-size="1000000">/local/data/scratch/p2iconcertgfdev/diskstore/gsamfi-dev-perf</disk-dir>
+    </disk-dirs>
+  </disk-store>
+  <disk-store name="productRegulationDiskStore" time-interval="9999" queue-size="50">
+    <disk-dirs>
+      <disk-dir dir-size="1000000">/local/data/scratch/p2iconcertgfdev/diskstore/gsamfi-dev-perf</disk-dir>
+    </disk-dirs>
+  </disk-store>
+  <disk-store name="eventTransactionLogDiskStore" time-interval="9999" queue-size="50">
+    <disk-dirs>
+      <disk-dir dir-size="1000000">/local/data/scratch/p2iconcertgfdev/diskstore/gsamfi-dev-perf</disk-dir>
+    </disk-dirs>
+  </disk-store>
+  <disk-store name="quoteHistoryDiskStore" time-interval="9999" queue-size="50">
+    <disk-dirs>
+      <disk-dir dir-size="1000000">/local/data/scratch/p2iconcertgfdev/diskstore/gsamfi-dev-perf</disk-dir>
+    </disk-dirs>
+  </disk-store>
+  <disk-store name="subActivityDiskStore" time-interval="9999" queue-size="50">
+    <disk-dirs>
+      <disk-dir dir-size="1000000">/local/data/scratch/p2iconcertgfdev/diskstore/gsamfi-dev-perf</disk-dir>
+    </disk-dirs>
+  </disk-store>
+  <disk-store name="targetPortfolioDiskStore" time-interval="9999" queue-size="50">
+    <disk-dirs>
+      <disk-dir dir-size="1000000">/local/data/scratch/p2iconcertgfdev/diskstore/gsamfi-dev-perf</disk-dir>
+    </disk-dirs>
+  </disk-store>
+  <disk-store name="productSectorDiskStore" time-interval="9999" queue-size="50">
+    <disk-dirs>
+      <disk-dir dir-size="1000000">/local/data/scratch/p2iconcertgfdev/diskstore/gsamfi-dev-perf</disk-dir>
+    </disk-dirs>
+  </disk-store>
+  <disk-store name="validationIssueXRefDiskStore" time-interval="9999" queue-size="50">
+    <disk-dirs>
+      <disk-dir dir-size="1000000">/local/data/scratch/p2iconcertgfdev/diskstore/gsamfi-dev-perf</disk-dir>
+    </disk-dirs>
+  </disk-store>
+  <disk-store name="publishedMessagesDiskStore" time-interval="9999" queue-size="50">
+    <disk-dirs>
+      <disk-dir dir-size="1000000">/local/data/scratch/p2iconcertgfdev/diskstore/gsamfi-dev-perf</disk-dir>
+    </disk-dirs>
+  </disk-store>
+  <disk-store name="tradeHistoryDiskStore" time-interval="9999" queue-size="50">
+    <disk-dirs>
+      <disk-dir dir-size="1000000">/local/data/scratch/p2iconcertgfdev/diskstore/gsamfi-dev-perf</disk-dir>
+    </disk-dirs>
+  </disk-store>
+  <disk-store name="quoteDiskStore" time-interval="9999" queue-size="50">
+    <disk-dirs>
+      <disk-dir dir-size="1000000">/local/data/scratch/p2iconcertgfdev/diskstore/gsamfi-dev-perf</disk-dir>
+    </disk-dirs>
+  </disk-store>
+  <disk-store name="executionDiskStore" time-interval="9999" queue-size="50">
+    <disk-dirs>
+      <disk-dir dir-size="1000000">/local/data/scratch/p2iconcertgfdev/diskstore/gsamfi-dev-perf</disk-dir>
+    </disk-dirs>
+  </disk-store>
+  <disk-store name="errorEventDiskStore" time-interval="9999" queue-size="50">
+    <disk-dirs>
+      <disk-dir dir-size="1000000">/local/data/scratch/p2iconcertgfdev/diskstore/gsamfi-dev-perf</disk-dir>
+    </disk-dirs>
+  </disk-store>
+  <disk-store name="tradeLegHistoryDiskStore" time-interval="9999" queue-size="50">
+    <disk-dirs>
+      <disk-dir dir-size="1000000">/local/data/scratch/p2iconcertgfdev/diskstore/gsamfi-dev-perf</disk-dir>
+    </disk-dirs>
+  </disk-store>
+  <disk-store name="regReportingInfoXRefHistoryDiskStore" time-interval="9999" queue-size="50">
+    <disk-dirs>
+      <disk-dir dir-size="1000000">/local/data/scratch/p2iconcertgfdev/diskstore/gsamfi-dev-perf</disk-dir>
+    </disk-dirs>
+  </disk-store>
+  <disk-store name="stepFillDiskStore" time-interval="9999" queue-size="50">
+    <disk-dirs>
+      <disk-dir dir-size="1000000">/local/data/scratch/p2iconcertgfdev/diskstore/gsamfi-dev-perf</disk-dir>
+    </disk-dirs>
+  </disk-store>
+  <disk-store name="noteHistoryDiskStore" time-interval="9999" queue-size="50">
+    <disk-dirs>
+      <disk-dir dir-size="1000000">/local/data/scratch/p2iconcertgfdev/diskstore/gsamfi-dev-perf</disk-dir>
+    </disk-dirs>
+  </disk-store>
+  <disk-store name="partyXRefDiskStore" time-interval="9999" queue-size="50">
+    <disk-dirs>
+      <disk-dir dir-size="1000000">/local/data/scratch/p2iconcertgfdev/diskstore/gsamfi-dev-perf</disk-dir>
+    </disk-dirs>
+  </disk-store>
+  <disk-store name="riskBudgetCorrelationMatrixHistoryDiskStore" time-interval="9999" queue-size="50">
+    <disk-dirs>
+      <disk-dir dir-size="1000000">/local/data/scratch/p2iconcertgfdev/diskstore/gsamfi-dev-perf</disk-dir>
+    </disk-dirs>
+  </disk-store>
+  <disk-store name="regReportingInfoXRefDiskStore" time-interval="9999" queue-size="50">
+    <disk-dirs>
+      <disk-dir dir-size="1000000">/local/data/scratch/p2iconcertgfdev/diskstore/gsamfi-dev-perf</disk-dir>
+    </disk-dirs>
+  </disk-store>
+  <disk-store name="fiAccountGroupDiskStore" time-interval="9999" queue-size="50">
+    <disk-dirs>
+      <disk-dir dir-size="1000000">/local/data/scratch/p2iconcertgfdev/diskstore/gsamfi-dev-perf</disk-dir>
+    </disk-dirs>
+  </disk-store>
+  <disk-store name="productDetailDiskStore" time-interval="9999" queue-size="50">
+    <disk-dirs>
+      <disk-dir dir-size="1000000">/local/data/scratch/p2iconcertgfdev/diskstore/gsamfi-dev-perf</disk-dir>
+    </disk-dirs>
+  </disk-store>
+  <disk-store name="productSummaryDiskStore" time-interval="9999" queue-size="50">
+    <disk-dirs>
+      <disk-dir dir-size="1000000">/local/data/scratch/p2iconcertgfdev/diskstore/gsamfi-dev-perf</disk-dir>
+    </disk-dirs>
+  </disk-store>
+  <disk-store name="rebalanceActivityHistoryDiskStore" time-interval="9999" queue-size="50">
+    <disk-dirs>
+      <disk-dir dir-size="1000000">/local/data/scratch/p2iconcertgfdev/diskstore/gsamfi-dev-perf</disk-dir>
+    </disk-dirs>
+  </disk-store>
+  <disk-store name="riskBudgetInformationRatioDiskStore" time-interval="9999" queue-size="50">
+    <disk-dirs>
+      <disk-dir dir-size="1000000">/local/data/scratch/p2iconcertgfdev/diskstore/gsamfi-dev-perf</disk-dir>
+    </disk-dirs>
+  </disk-store>
+  <disk-store name="orderHistoryDiskStore" time-interval="9999" queue-size="50">
+    <disk-dirs>
+      <disk-dir dir-size="1000000">/local/data/scratch/p2iconcertgfdev/diskstore/gsamfi-dev-perf</disk-dir>
+    </disk-dirs>
+  </disk-store>
+  <disk-store name="alertsDiskStore" time-interval="9999" queue-size="50">
+    <disk-dirs>
+      <disk-dir dir-size="1000000">/local/data/scratch/p2iconcertgfdev/diskstore/gsamfi-dev-perf</disk-dir>
+    </disk-dirs>
+  </disk-store>
+  <disk-store name="virtualObjectDiskStore" time-interval="9999" queue-size="50">
+    <disk-dirs>
+      <disk-dir dir-size="1000000">/local/data/scratch/p2iconcertgfdev/diskstore/gsamfi-dev-perf</disk-dir>
+    </disk-dirs>
+  </disk-store>
+  <disk-store name="validationResultDiskStore" time-interval="9999" queue-size="50">
+    <disk-dirs>
+      <disk-dir dir-size="1000000">/local/data/scratch/p2iconcertgfdev/diskstore/gsamfi-dev-perf</disk-dir>
+    </disk-dirs>
+  </disk-store>
+  <disk-store name="basketHistoryDiskStore" time-interval="9999" queue-size="50">
+    <disk-dirs>
+      <disk-dir dir-size="1000000">/local/data/scratch/p2iconcertgfdev/diskstore/gsamfi-dev-perf</disk-dir>
+    </disk-dirs>
+  </disk-store>
+  <disk-store name="validationIssueDiskStore" time-interval="9999" queue-size="50">
+    <disk-dirs>
+      <disk-dir dir-size="1000000">/local/data/scratch/p2iconcertgfdev/diskstore/gsamfi-dev-perf</disk-dir>
+    </disk-dirs>
+  </disk-store>
+  <disk-store name="targetPortfolioHistoryDiskStore" time-interval="9999" queue-size="50">
+    <disk-dirs>
+      <disk-dir dir-size="1000000">/local/data/scratch/p2iconcertgfdev/diskstore/gsamfi-dev-perf</disk-dir>
+    </disk-dirs>
+  </disk-store>
+  <disk-store name="orderDiskStore" time-interval="9999" queue-size="50">
+    <disk-dirs>
+      <disk-dir dir-size="1000000">/local/data/scratch/p2iconcertgfdev/diskstore/gsamfi-dev-perf</disk-dir>
+    </disk-dirs>
+  </disk-store>
+  <disk-store name="virtualObjectHistoryDiskStore" time-interval="9999" queue-size="50">
+    <disk-dirs>
+      <disk-dir dir-size="1000000">/local/data/scratch/p2iconcertgfdev/diskstore/gsamfi-dev-perf</disk-dir>
+    </disk-dirs>
+  </disk-store>
+  <disk-store name="eventDiskStore" time-interval="9999" queue-size="50">
+    <disk-dirs>
+      <disk-dir dir-size="1000000">/local/data/scratch/p2iconcertgfdev/diskstore/gsamfi-dev-perf</disk-dir>
+    </disk-dirs>
+  </disk-store>
+  <disk-store name="fiAccountRiskHistoryDiskStore" time-interval="9999" queue-size="50">
+    <disk-dirs>
+      <disk-dir dir-size="1000000">/local/data/scratch/p2iconcertgfdev/diskstore/gsamfi-dev-perf</disk-dir>
+    </disk-dirs>
+  </disk-store>
+  <disk-store name="proposedOrderHistoryDiskStore" time-interval="9999" queue-size="50">
+    <disk-dirs>
+      <disk-dir dir-size="1000000">/local/data/scratch/p2iconcertgfdev/diskstore/gsamfi-dev-perf</disk-dir>
+    </disk-dirs>
+  </disk-store>
+  <disk-store name="activityHistoryDiskStore" time-interval="9999" queue-size="50">
+    <disk-dirs>
+      <disk-dir dir-size="1000000">/local/data/scratch/p2iconcertgfdev/diskstore/gsamfi-dev-perf</disk-dir>
+    </disk-dirs>
+  </disk-store>
+  <disk-store name="stepAllocationDiskStore" time-interval="9999" queue-size="50">
+    <disk-dirs>
+      <disk-dir dir-size="1000000">/local/data/scratch/p2iconcertgfdev/diskstore/gsamfi-dev-perf</disk-dir>
+    </disk-dirs>
+  </disk-store>
+  <disk-store name="segmentDiskStore" time-interval="9999" queue-size="50">
+    <disk-dirs>
+      <disk-dir dir-size="1000000">/local/data/scratch/p2iconcertgfdev/diskstore/gsamfi-dev-perf</disk-dir>
+    </disk-dirs>
+  </disk-store>
+  <disk-store name="pdxDiskstore" time-interval="9999" queue-size="50">
+    <disk-dirs>
+      <disk-dir dir-size="1000000">/local/data/scratch/p2iconcertgfdev/diskstore/gsamfi-dev-perf</disk-dir>
+    </disk-dirs>
+  </disk-store>
+  <disk-store name="activityDiskStore" time-interval="9999" queue-size="50">
+    <disk-dirs>
+      <disk-dir dir-size="1000000">/local/data/scratch/p2iconcertgfdev/diskstore/gsamfi-dev-perf</disk-dir>
+    </disk-dirs>
+  </disk-store>
+  <disk-store name="subActivityHistoryDiskStore" time-interval="9999" queue-size="50">
+    <disk-dirs>
+      <disk-dir dir-size="1000000">/local/data/scratch/p2iconcertgfdev/diskstore/gsamfi-dev-perf</disk-dir>
+    </disk-dirs>
+  </disk-store>
+  <disk-store name="validationResultHistoryDiskStore" time-interval="9999" queue-size="50">
+    <disk-dirs>
+      <disk-dir dir-size="1000000">/local/data/scratch/p2iconcertgfdev/diskstore/gsamfi-dev-perf</disk-dir>
+    </disk-dirs>
+  </disk-store>
+  <disk-store name="clientPortfolioHistoryDiskStore" time-interval="9999" queue-size="50">
+    <disk-dirs>
+      <disk-dir dir-size="1000000">/local/data/scratch/p2iconcertgfdev/diskstore/gsamfi-dev-perf</disk-dir>
+    </disk-dirs>
+  </disk-store>
+  <disk-store name="planningDiskStore" time-interval="9999" queue-size="50">
+    <disk-dirs>
+      <disk-dir dir-size="1000000">/local/data/scratch/p2iconcertgfdev/diskstore/gsamfi-dev-perf</disk-dir>
+    </disk-dirs>
+  </disk-store>
+  <disk-store name="validationIssueHistoryDiskStore" time-interval="9999" queue-size="50">
+    <disk-dirs>
+      <disk-dir dir-size="1000000">/local/data/scratch/p2iconcertgfdev/diskstore/gsamfi-dev-perf</disk-dir>
+    </disk-dirs>
+  </disk-store>
+  <disk-store name="targetAllocationDiskStore" time-interval="9999" queue-size="50">
+    <disk-dirs>
+      <disk-dir dir-size="1000000">/local/data/scratch/p2iconcertgfdev/diskstore/gsamfi-dev-perf</disk-dir>
+    </disk-dirs>
+  </disk-store>
+  <disk-store name="rebalanceActivityDiskStore" time-interval="9999" queue-size="50">
+    <disk-dirs>
+      <disk-dir dir-size="1000000">/local/data/scratch/p2iconcertgfdev/diskstore/gsamfi-dev-perf</disk-dir>
+    </disk-dirs>
+  </disk-store>
+  <disk-store name="regReportDiskStore" time-interval="9999" queue-size="50">
+    <disk-dirs>
+      <disk-dir dir-size="1000000">/local/data/scratch/p2iconcertgfdev/diskstore/gsamfi-dev-perf</disk-dir>
+    </disk-dirs>
+  </disk-store>
+  <disk-store name="partyXRefHistoryDiskStore" time-interval="9999" queue-size="50">
+    <disk-dirs>
+      <disk-dir dir-size="1000000">/local/data/scratch/p2iconcertgfdev/diskstore/gsamfi-dev-perf</disk-dir>
+    </disk-dirs>
+  </disk-store>
+  <disk-store name="productIdXRefDiskStore" time-interval="9999" queue-size="50">
+    <disk-dirs>
+      <disk-dir dir-size="1000000">/local/data/scratch/p2iconcertgfdev/diskstore/gsamfi-dev-perf</disk-dir>
+    </disk-dirs>
+  </disk-store>
+  <disk-store name="validationIssueXRefHistoryDiskStore" time-interval="9999" queue-size="50">
+    <disk-dirs>
+      <disk-dir dir-size="1000000">/local/data/scratch/p2iconcertgfdev/diskstore/gsamfi-dev-perf</disk-dir>
+    </disk-dirs>
+  </disk-store>
+  <disk-store name="tradeLegDiskStore" time-interval="9999" queue-size="50">
+    <disk-dirs>
+      <disk-dir dir-size="1000000">/local/data/scratch/p2iconcertgfdev/diskstore/gsamfi-dev-perf</disk-dir>
+    </disk-dirs>
+  </disk-store>
+  <disk-store name="eventStateDiskStore" time-interval="9999" queue-size="50">
+    <disk-dirs>
+      <disk-dir dir-size="1000000">/local/data/scratch/p2iconcertgfdev/diskstore/gsamfi-dev-perf</disk-dir>
+    </disk-dirs>
+  </disk-store>
+  <disk-store name="clientPortfolioDiskStore" time-interval="9999" queue-size="50">
+    <disk-dirs>
+      <disk-dir dir-size="1000000">/local/data/scratch/p2iconcertgfdev/diskstore/gsamfi-dev-perf</disk-dir>
+    </disk-dirs>
+  </disk-store>
+  <disk-store name="tradeDiskStore" time-interval="9999" queue-size="50">
+    <disk-dirs>
+      <disk-dir dir-size="1000000">/local/data/scratch/p2iconcertgfdev/diskstore/gsamfi-dev-perf</disk-dir>
+    </disk-dirs>
+  </disk-store>
+  <disk-store name="alertsHistoryDiskStore" time-interval="9999" queue-size="50">
+    <disk-dirs>
+      <disk-dir dir-size="1000000">/local/data/scratch/p2iconcertgfdev/diskstore/gsamfi-dev-perf</disk-dir>
+    </disk-dirs>
+  </disk-store>
+  <disk-store name="messageSequenceDiskStore" time-interval="9999" queue-size="50">
+    <disk-dirs>
+      <disk-dir dir-size="1000000">/local/data/scratch/p2iconcertgfdev/diskstore/gsamfi-dev-perf</disk-dir>
+    </disk-dirs>
+  </disk-store>
+  <disk-store name="ruleQueryHistoryDiskStore" time-interval="9999" queue-size="50">
+    <disk-dirs>
+      <disk-dir dir-size="1000000">/local/data/scratch/p2iconcertgfdev/diskstore/gsamfi-dev-perf</disk-dir>
+    </disk-dirs>
+  </disk-store>
+  <disk-store name="basketXRefDiskStore" time-interval="9999" queue-size="50">
+    <disk-dirs>
+      <disk-dir dir-size="1000000">/local/data/scratch/p2iconcertgfdev/diskstore/gsamfi-dev-perf</disk-dir>
+    </disk-dirs>
+  </disk-store>
+  <disk-store name="noteDiskStore" time-interval="9999" queue-size="50">
+   <disk-dirs>
+      <disk-dir dir-size="1000000">/local/data/scratch/p2iconcertgfdev/diskstore/gsamfi-dev-perf</disk-dir>
+    </disk-dirs>
+  </disk-store>
+  <disk-store name="fiAccountGroupHistoryDiskStore" time-interval="9999" queue-size="50">
+    <disk-dirs>
+      <disk-dir dir-size="1000000">/local/data/scratch/p2iconcertgfdev/diskstore/gsamfi-dev-perf</disk-dir>
+    </disk-dirs>
+  </disk-store>
+  <disk-store name="executionHistoryDiskStore" time-interval="9999" queue-size="50">
+    <disk-dirs>
+      <disk-dir dir-size="1000000">/local/data/scratch/p2iconcertgfdev/diskstore/gsamfi-dev-perf</disk-dir>
+    </disk-dirs>
+  </disk-store>
+  <disk-store name="targetAllocationHistoryDiskStore" time-interval="9999" queue-size="50">
+    <disk-dirs>
+      <disk-dir dir-size="1000000">/local/data/scratch/p2iconcertgfdev/diskstore/gsamfi-dev-perf</disk-dir>
+    </disk-dirs>
+  </disk-store>
+  <disk-store name="orderEventDiskStore" time-interval="9999" queue-size="50">
+    <disk-dirs>
+      <disk-dir dir-size="1000000">/local/data/scratch/p2iconcertgfdev/diskstore/gsamfi-dev-perf</disk-dir>
+    </disk-dirs>
+  </disk-store>
+  <disk-store name="notificationCheckPointDiskStore" time-interval="9999" queue-size="50">
+    <disk-dirs>
+      <disk-dir dir-size="1000000">/local/data/scratch/p2iconcertgfdev/diskstore/gsamfi-dev-perf</disk-dir>
+    </disk-dirs>
+  </disk-store>
+  <disk-store name="proposedOrderDiskStore" time-interval="9999" queue-size="50">
+    <disk-dirs>
+      <disk-dir dir-size="1000000">/local/data/scratch/p2iconcertgfdev/diskstore/gsamfi-dev-perf</disk-dir>
+    </disk-dirs>
+  </disk-store>
+  <disk-store name="notificationSubscriptionStateDiskStore" time-interval="9999" queue-size="50">
+    <disk-dirs>
+      <disk-dir dir-size="1000000">/local/data/scratch/p2iconcertgfdev/diskstore/gsamfi-dev-perf</disk-dir>
+    </disk-dirs>
+  </disk-store>
+  <disk-store name="eventTransactionLogHistoryDiskStore" time-interval="9999" queue-size="50">
+    <disk-dirs>
+      <disk-dir dir-size="1000000">/local/data/scratch/p2iconcertgfdev/diskstore/gsamfi-dev-perf</disk-dir>
+    </disk-dirs>
+  </disk-store>
+  <disk-store name="noteXRefDiskStore" time-interval="9999" queue-size="50">
+    <disk-dirs>
+      <disk-dir dir-size="1000000">/local/data/scratch/p2iconcertgfdev/diskstore/gsamfi-dev-perf</disk-dir>
+    </disk-dirs>
+  </disk-store>
+  <disk-store name="executionAllocationHistoryDiskStore" time-interval="9999" queue-size="50">
+    <disk-dirs>
+      <disk-dir dir-size="1000000">/local/data/scratch/p2iconcertgfdev/diskstore/gsamfi-dev-perf</disk-dir>
+    </disk-dirs>
+  </disk-store>
+  <disk-store name="executionAllocationDiskStore" time-interval="9999" queue-size="50">
+    <disk-dirs>
+      <disk-dir dir-size="1000000">/local/data/scratch/p2iconcertgfdev/diskstore/gsamfi-dev-perf</disk-dir>
+    </disk-dirs>
+  </disk-store>
+  <disk-store name="ruleQueryDiskStore" time-interval="9999" queue-size="50">
+    <disk-dirs>
+      <disk-dir dir-size="1000000">/local/data/scratch/p2iconcertgfdev/diskstore/gsamfi-dev-perf</disk-dir>
+    </disk-dirs>
+  </disk-store>
+  <disk-store name="riskBudgetInformationRatioHistoryDiskStore" time-interval="9999" queue-size="50">
+    <disk-dirs>
+      <disk-dir dir-size="1000000">/local/data/scratch/p2iconcertgfdev/diskstore/gsamfi-dev-perf</disk-dir>
+    </disk-dirs>
+  </disk-store>
+  <disk-store name="fiAccountRiskDiskStore" time-interval="9999" queue-size="50">
+    <disk-dirs>
+      <disk-dir dir-size="1000000">/local/data/scratch/p2iconcertgfdev/diskstore/gsamfi-dev-perf</disk-dir>
+    </disk-dirs>
+  </disk-store>
+  <disk-store name="planningArchiveDiskStore" time-interval="9999" queue-size="50">
+    <disk-dirs>
+      <disk-dir dir-size="1000000">/local/data/scratch/p2iconcertgfdev/diskstore/gsamfi-dev-perf</disk-dir>
+    </disk-dirs>
+  </disk-store>
+  <disk-store name="publishedMessageDiskStore" time-interval="9999" queue-size="50">
+    <disk-dirs>
+      <disk-dir dir-size="1000000">/local/data/scratch/p2iconcertgfdev/diskstore/gsamfi-dev-perf</disk-dir>
+    </disk-dirs>
+  </disk-store>
+  <disk-store name="testFiRegionDiskStore" time-interval="9999" queue-size="50">
+    <disk-dirs>
+      <disk-dir dir-size="1000000">/local/data/scratch/p2iconcertgfdev/diskstore/gsamfi-dev-perf</disk-dir>
+    </disk-dirs>
+  </disk-store>
+  <disk-store name="externalIDXRefDiskStore" time-interval="9999" queue-size="50">
+    <disk-dirs>
+      <disk-dir dir-size="1000000">/local/data/scratch/p2iconcertgfdev/diskstore/gsamfi-dev-perf</disk-dir>
+    </disk-dirs>
+  </disk-store>
+  <disk-store name="checkPointDiskStore" time-interval="9999" queue-size="50">
+    <disk-dirs>
+      <disk-dir dir-size="1000000">/local/data/scratch/p2iconcertgfdev/diskstore/gsamfi-dev-perf</disk-dir>
+    </disk-dirs>
+  </disk-store>
+  <disk-store name="stepProductBlockDiskStore" time-interval="9999" queue-size="50">
+    <disk-dirs>
+      <disk-dir dir-size="1000000">/local/data/scratch/p2iconcertgfdev/diskstore/gsamfi-dev-perf</disk-dir>
+    </disk-dirs>
+  </disk-store>
+  <disk-store name="riskBudgetCorrelationMatrixDiskStore" time-interval="9999" queue-size="50">
+    <disk-dirs>
+      <disk-dir dir-size="1000000">/local/data/scratch/p2iconcertgfdev/diskstore/gsamfi-dev-perf</disk-dir>
+    </disk-dirs>
+  </disk-store>
+  <pdx read-serialized="true" persistent="true" disk-store-name="pdxDiskstore">
+    <pdx-serializer>
+      <class-name>com.gemstone.gemfire.pdx.ReflectionBasedAutoSerializer</class-name>
+      <parameter name="check-portability">
+        <string>true</string>
+      </parameter>
+      <parameter name="classes">
+       <string>com.gs.imd.concert.data.model.*, com.gs.pwm.concert.data.model.*</string>
+      </parameter>
+    </pdx-serializer>
+  </pdx>
+  <region name="activity">
+    <region-attributes scope="distributed-ack" data-policy="persistent-replicate" disk-store-name="activityDiskStore" disk-synchronous="false" cloning-enabled="true"/>
+  </region>
+  <region name="activityHistory">
+    <region-attributes scope="distributed-ack" data-policy="persistent-replicate" disk-store-name="activityHistoryDiskStore" disk-synchronous="false" cloning-enabled="true"/>
+  </region>
+  <region name="alerts">
+    <region-attributes scope="distributed-ack" data-policy="persistent-replicate" disk-store-name="alertsDiskStore" disk-synchronous="false" cloning-enabled="true"/>
+        <index name="alerts_alertID" from-clause="/alerts index_from" expression="index_from.alertID" type="range" />
+        <index name="alerts_groupId" from-clause="/alerts index_from" expression="index_from.groupId" type="range" />
+  </region>
+  <region name="alertsHistory">
+    <region-attributes scope="distributed-ack" data-policy="persistent-replicate" disk-store-name="alertsHistoryDiskStore" disk-synchronous="false" cloning-enabled="true"/>
+        <index name="alertsHistory_alertID" from-clause="/alertsHistory index_from" expression="index_from.alertID" type="range" />
+        <index name="alertsHistory_groupId" from-clause="/alertsHistory index_from" expression="index_from.alertID" type="range" />
+  </region>
+  <region name="basket">
+    <region-attributes scope="distributed-ack" data-policy="persistent-replicate" disk-store-name="basketDiskStore" disk-synchronous="false" cloning-enabled="true"/>
+  </region>
+  <region name="basketHistory">
+    <region-attributes scope="distributed-ack" data-policy="persistent-replicate" disk-store-name="basketHistoryDiskStore" disk-synchronous="false" cloning-enabled="true"/>
+  </region>
+  <region name="basketXRef">
+    <region-attributes scope="distributed-ack" data-policy="persistent-replicate" disk-store-name="basketXRefDiskStore" disk-synchronous="false" cloning-enabled="true"/>
+  </region>
+  <region name="checkPoint">
+    <region-attributes scope="distributed-ack" data-policy="persistent-replicate" disk-store-name="checkPointDiskStore" disk-synchronous="false" cloning-enabled="true">
+      <eviction-attributes>
+        <lru-heap-percentage action="overflow-to-disk"/>
+      </eviction-attributes>
+    </region-attributes>
+  </region>
+  <region name="clientPortfolio">
+    <region-attributes scope="distributed-ack" data-policy="persistent-replicate" disk-store-name="clientPortfolioDiskStore" disk-synchronous="false" cloning-enabled="true"/>
+        <index name="clientPortfolio_accountID" from-clause="/clientPortfolio cp, cp.clientRelationshipAccounts index_from" expression="index_from.accountID" type="range" />
+        <index name="clientPortfolio_externalReferenceID" from-clause="/clientPortfolio index_from" expression="index_from.externalReferenceID" type="range" />
+        <index name="clientPortfolio_partyID" from-clause="/clientPortfolio cp, cp.parties index_from" expression="index_from.partyID" type="range" />
+        <index name="clientPortfolio_targetPortfolioID" from-clause="/clientPortfolio index_from" expression="index_from.targetPortfolioID" type="range" />
+  </region>
+  <region name="clientPortfolioHistory">
+    <region-attributes scope="distributed-ack" data-policy="persistent-replicate" disk-store-name="clientPortfolioHistoryDiskStore" disk-synchronous="false" cloning-enabled="true"/>
+  </region>
+  <region name="errorEvent">
+    <region-attributes scope="distributed-ack" data-policy="persistent-replicate" disk-store-name="errorEventDiskStore" disk-synchronous="false" cloning-enabled="true"/>
+  </region>
+  <region name="event">
+    <region-attributes scope="distributed-ack" data-policy="persistent-replicate" disk-store-name="eventDiskStore" disk-synchronous="false" cloning-enabled="true"/>
+        <index name="event_eventID" from-clause="/event index_from" expression="index_from.eventID" type="range" />
+        <index name="event_refeedEventID" from-clause="/event index_from" expression="index_from.refeedEventID" type="range" />
+        <index name="event_rootEventID" from-clause="/event index_from" expression="index_from.rootEventID" type="range" />
+  </region>
+  <region name="eventState">
+    <region-attributes scope="distributed-ack" data-policy="persistent-replicate" disk-store-name="eventStateDiskStore" disk-synchronous="false" cloning-enabled="true"/>
+        <index name="eventState_cacheUpdateTime" from-clause="/eventState index_from" expression="index_from.cacheUpdateTime" type="range" />
+        <index name="eventState_cepId" from-clause="/eventState index_from" expression="index_from.cepId" type="range" />
+        <index name="eventState_eventId" from-clause="/eventState index_from" expression="index_from.eventId" type="range" />
+        <index name="eventState_eventName" from-clause="/eventState index_from" expression="index_from.eventName" type="range" />
+        <index name="eventState_rootEventID" from-clause="/eventState index_from" expression="index_from.rootEventID" type="range" />
+  </region>
+  <region name="eventTransactionLog">
+    <region-attributes scope="distributed-ack" data-policy="persistent-replicate" disk-store-name="eventTransactionLogDiskStore" disk-synchronous="false" cloning-enabled="true"/>
+  </region>
+  <region name="eventTransactionLogHistory">
+    <region-attributes scope="distributed-ack" data-policy="persistent-replicate" disk-store-name="eventTransactionLogHistoryDiskStore" disk-synchronous="false" cloning-enabled="true"/>
+  </region>
+  <region name="execution">
+    <region-attributes scope="distributed-ack" data-policy="persistent-replicate" disk-store-name="executionDiskStore" disk-synchronous="false" cloning-enabled="true"/>
+        <index name="execution_clOrderID" from-clause="/execution index_from" expression="index_from.clOrderID" type="range" />
+        <index name="execution_execID" from-clause="/execution index_from" expression="index_from.execID" type="range" />
+        <index name="execution_externalExecID" from-clause="/execution index_from" expression="index_from.externalExecID" type="range" />
+        <index name="execution_orderID" from-clause="/execution index_from" expression="index_from.orderID" type="range" />
+  </region>
+  <region name="executionAllocation">
+    <region-attributes scope="distributed-ack" data-policy="persistent-replicate" disk-store-name="executionAllocationDiskStore" disk-synchronous="false" cloning-enabled="true"/>
+        <index name="executionAllocation_execID" from-clause="/executionAllocation index_from" expression="index_from.execID" type="range" />
+  </region>
+  <region name="executionAllocationHistory">
+    <region-attributes scope="distributed-ack" data-policy="persistent-replicate" disk-store-name="executionAllocationHistoryDiskStore" disk-synchronous="false" cloning-enabled="true"/>
+        <index name="executionAllocationHistory_allocID" from-clause="/executionAllocationHistory index_from" expression="index_from.allocID" type="range" />
+        <index name="executionAllocationHistory_execID" from-clause="/executionAllocationHistory index_from" expression="index_from.execID" type="range" />
+  </region>
+  <region name="executionHistory">
+    <region-attributes scope="distributed-ack" data-policy="persistent-replicate" disk-store-name="executionHistoryDiskStore" disk-synchronous="false" cloning-enabled="true"/>
+        <index name="executionHistory_execID" from-clause="/executionHistory index_from" expression="index_from.execID" type="range" />
+        <index name="executionHistory_externalExecID" from-clause="/executionHistory index_from" expression="index_from.execID" type="range" />
+        <index name="executionHistory_orderID" from-clause="/executionHistory index_from" expression="index_from.orderID" type="range" />
+  </region>
+  <region name="externalIDXRef">
+   <region-attributes scope="distributed-ack" data-policy="persistent-replicate" disk-store-name="externalIDXRefDiskStore" disk-synchronous="false" cloning-enabled="true"/>
+        <index name="externalIDXRef_entityID" from-clause="/externalIDXRef index_from" expression="index_from.entityID" type="range" />
+        <index name="externalIDXRef_externalEntityID" from-clause="/externalIDXRef index_from" expression="index_from.externalEntityID" type="range" />
+  </region>
+  <region name="fiAccountGroup">
+    <region-attributes scope="distributed-ack" data-policy="persistent-replicate" disk-store-name="fiAccountGroupDiskStore" disk-synchronous="false" cloning-enabled="true"/>
+        <index name="fiAccountGroup_fiAccountGroupId" from-clause="/fiAccountGroup index_from" expression="index_from.fiAccountGroupId" type="range" />
+  </region>
+  <region name="fiAccountGroupHistory">
+    <region-attributes scope="distributed-ack" data-policy="persistent-replicate" disk-store-name="fiAccountGroupHistoryDiskStore" disk-synchronous="false" cloning-enabled="true"/>
+        <index name="fiAccountGroupHistory_fiAccountGroupId" from-clause="/fiAccountGroupHistory index_from" expression="index_from.fiAccountGroupId" type="range" />
+  </region>
+  <region name="fiAccountRisk">
+    <region-attributes scope="distributed-ack" data-policy="persistent-replicate" disk-store-name="fiAccountRiskDiskStore" disk-synchronous="false" cloning-enabled="true"/>
+        <index name="fiAccountRisk_fiAccountId" from-clause="/fiAccountRisk index_from" expression="index_from.fiAccountId" type="range" />
+        <index name="fiAccountRisk_portId" from-clause="/fiAccountRisk index_from" expression="index_from.portId" type="range" />
+  </region>
+  <region name="fiAccountRiskHistory">
+    <region-attributes scope="distributed-ack" data-policy="persistent-replicate" disk-store-name="fiAccountRiskHistoryDiskStore" disk-synchronous="false" cloning-enabled="true"/>
+        <index name="fiAccountRiskHistory_fiAccountId" from-clause="/fiAccountRiskHistory index_from" expression="index_from.fiAccountId" type="range" />
+        <index name="fiAccountRiskHistory_portId" from-clause="/fiAccountRiskHistory index_from" expression="index_from.portId" type="range" />
+  </region>
+  <region name="messageSequence">
+    <region-attributes scope="distributed-ack" data-policy="persistent-replicate" disk-store-name="messageSequenceDiskStore" disk-synchronous="false" cloning-enabled="true"/>
+  </region>
+  <region name="note">
+    <region-attributes scope="distributed-ack" data-policy="persistent-replicate" disk-store-name="noteDiskStore" disk-synchronous="false" cloning-enabled="true"/>
+  </region>
+  <region name="noteHistory">
+    <region-attributes scope="distributed-ack" data-policy="persistent-replicate" disk-store-name="noteHistoryDiskStore" disk-synchronous="false" cloning-enabled="true"/>
+  </region>
+  <region name="noteXRef">
+    <region-attributes scope="distributed-ack" data-policy="persistent-replicate" disk-store-name="noteXRefDiskStore" disk-synchronous="false" cloning-enabled="true"/>
+        <index name="noteXRef_entityID" from-clause="/noteXRef index_from" expression="index_from.entityID" type="range" />
+        <index name="noteXRef_noteXRefID" from-clause="/noteXRef index_from" expression="index_from.noteXRefID" type="range" />
+  </region>
+  <region name="notificationCheckPoint">
+    <region-attributes scope="distributed-ack" data-policy="persistent-replicate" disk-store-name="notificationCheckPointDiskStore" disk-synchronous="false" cloning-enabled="true"/>
+  </region>
+  <region name="notificationSubscriptionState">
+    <region-attributes scope="distributed-ack" data-policy="persistent-replicate" disk-store-name="notificationSubscriptionStateDiskStore" disk-synchronous="false" cloning-enabled="true"/>
+        <index name="notificationSubscriptionState_eventStateCacheUpdateTime" from-clause="/notificationSubscriptionState index_from" expression="index_from.eventStateCacheUpdateTime" type="range" />
+        <index name="notificationSubscriptionState_eventStateID" from-clause="/notificationSubscriptionState index_from" expression="index_from.eventStateID" type="range" />
+        <index name="notificationSubscriptionState_processedStatus_name" from-clause="/notificationSubscriptionState index_from" expression="index_from.processedStatus.name" type="range" />
+  </region>
+  <region name="order">
+    <region-attributes scope="distributed-ack" data-policy="persistent-replicate" disk-store-name="orderDiskStore" disk-synchronous="false" cloning-enabled="true"/>
+        <index name="order_clOrdID" from-clause="/order index_from" expression="index_from.clOrdID" type="range" />
+        <index name="order_externalOrderID" from-clause="/order index_from" expression="index_from.externalOrderID" type="range" />
+        <index name="order_externalOrderIDSource" from-clause="/order index_from" expression="index_from.externalOrderIDSource" type="range" />
+        <index name="order_orderID" from-clause="/order index_from" expression="index_from.orderID" type="range" />
+        <index name="order_parentOrderID" from-clause="/order index_from" expression="index_from.parentOrderID" type="range" />
+  </region>
+  <region name="orderEvent">
+    <region-attributes scope="distributed-ack" data-policy="persistent-replicate" disk-store-name="orderEventDiskStore" disk-synchronous="false" cloning-enabled="true"/>
+  </region>
+  <region name="orderHistory">
+    <region-attributes scope="distributed-ack" data-policy="persistent-replicate" disk-store-name="orderHistoryDiskStore" disk-synchronous="false" cloning-enabled="true"/>
+        <index name="orderHistory_clOrdID" from-clause="/orderHistory index_from" expression="index_from.clOrdID" type="range" />
+        <index name="orderHistory_externalOrderID" from-clause="/orderHistory index_from" expression="index_from.externalOrderID" type="range" />
+        <index name="orderHistory_externalOrderIDSource" from-clause="/orderHistory index_from" expression="index_from.externalOrderIDSource" type="range" />
+        <index name="orderHistory_orderID" from-clause="/orderHistory index_from" expression="index_from.orderID" type="range" />
+        <index name="orderHistory_parentOrderID" from-clause="/orderHistory index_from" expression="index_from.parentOrderID" type="range" />
+  </region>
+  <region name="partyXRef">
+    <region-attributes scope="distributed-ack" data-policy="persistent-replicate" disk-store-name="partyXRefDiskStore" disk-synchronous="false" cloning-enabled="true"/>
+        <index name="partyXRef_entityID" from-clause="/partyXRef index_from" expression="index_from.entityID" type="range" />
+        <index name="partyXRef_partyXRefID" from-clause="/partyXRef index_from" expression="index_from.partyXRefID" type="range" />
+  </region>
+  <region name="partyXRefHistory">
+    <region-attributes scope="distributed-ack" data-policy="persistent-replicate" disk-store-name="partyXRefHistoryDiskStore" disk-synchronous="false" cloning-enabled="true"/>
+        <index name="partyXRefHistory_entityID" from-clause="/partyXRefHistory index_from" expression="index_from.entityID" type="range" />
+        <index name="partyXRefHistory_partyXRefID" from-clause="/partyXRefHistory index_from" expression="index_from.partyXRefID" type="range" />
+  </region>
+  <region name="planning">
+    <region-attributes scope="distributed-ack" data-policy="persistent-replicate" disk-store-name="planningDiskStore" disk-synchronous="false" cloning-enabled="true"/>
+  </region>
+  <region name="planningArchive">
+    <region-attributes scope="distributed-ack" data-policy="persistent-replicate" disk-store-name="planningArchiveDiskStore" disk-synchronous="false" cloning-enabled="true"/>
+  </region>
+  <region name="productDetail">
+    <region-attributes scope="distributed-ack" data-policy="persistent-replicate" disk-store-name="productDetailDiskStore" disk-synchronous="false" cloning-enabled="true"/>
+  </region>
+  <region name="productIdXRef">
+    <region-attributes scope="distributed-ack" data-policy="persistent-replicate" disk-store-name="productIdXRefDiskStore" disk-synchronous="false" cloning-enabled="true"/>
+  </region>
+  <region name="productRegulation">
+    <region-attributes scope="distributed-ack" data-policy="persistent-replicate" disk-store-name="productRegulationDiskStore" disk-synchronous="false" cloning-enabled="true"/>
+  </region>
+  <region name="productSector">
+    <region-attributes scope="distributed-ack" data-policy="persistent-replicate" disk-store-name="productSectorDiskStore" disk-synchronous="false" cloning-enabled="true"/>
+  </region>
+  <region name="productSummary">
+    <region-attributes scope="distributed-ack" data-policy="persistent-replicate" disk-store-name="productSummaryDiskStore" disk-synchronous="false" cloning-enabled="true"/>
+  </region>
+  <region name="proposedOrder">
+    <region-attributes scope="distributed-ack" data-policy="persistent-replicate" disk-store-name="proposedOrderDiskStore" disk-synchronous="false" cloning-enabled="true"/>
+  </region>
+  <region name="proposedOrderHistory">
+    <region-attributes scope="distributed-ack" data-policy="persistent-replicate" disk-store-name="proposedOrderHistoryDiskStore" disk-synchronous="false" cloning-enabled="true"/>
+  </region>
+  <region name="publishedMessage">
+    <region-attributes scope="distributed-ack" data-policy="persistent-replicate" disk-store-name="publishedMessageDiskStore" disk-synchronous="false" cloning-enabled="true"/>
+  </region>
+  <region name="publishedMessages">
+    <region-attributes scope="distributed-ack" data-policy="persistent-replicate" disk-store-name="publishedMessagesDiskStore" disk-synchronous="false" cloning-enabled="true"/>
+  </region>
+  <region name="quote">
+    <region-attributes scope="distributed-ack" data-policy="persistent-replicate" disk-store-name="quoteDiskStore" disk-synchronous="false" cloning-enabled="true"/>
+        <index name="quote_externalQuoteID" from-clause="/quote index_from" expression="index_from.externalQuoteID" type="range" />
+        <index name="quote_orderID" from-clause="/quote index_from" expression="index_from.orderID" type="range" />
+  </region>
+  <region name="quoteHistory">
+    <region-attributes scope="distributed-ack" data-policy="persistent-replicate" disk-store-name="quoteHistoryDiskStore" disk-synchronous="false" cloning-enabled="true"/>
+  </region>
+  <region name="rebalanceActivity">
+    <region-attributes scope="distributed-ack" data-policy="persistent-replicate" disk-store-name="rebalanceActivityDiskStore" disk-synchronous="false" cloning-enabled="true"/>
+  </region>
+  <region name="rebalanceActivityHistory">
+    <region-attributes scope="distributed-ack" data-policy="persistent-replicate" disk-store-name="rebalanceActivityHistoryDiskStore" disk-synchronous="false" cloning-enabled="true"/>
+  </region>
+  <region name="regReport">
+    <region-attributes scope="distributed-ack" data-policy="persistent-replicate" disk-store-name="regReportDiskStore" disk-synchronous="false" cloning-enabled="true"/>
+        <index name="regReport_entityID" from-clause="/regReport index_from" expression="index_from.entityID" type="range" />
+        <index name="regReport_entityType" from-clause="/regReport index_from" expression="index_from.entityType" type="range" />
+  </region>
+  <region name="regReportingInfoXRef">
+    <region-attributes scope="distributed-ack" data-policy="persistent-replicate" disk-store-name="regReportingInfoXRefDiskStore" disk-synchronous="false" cloning-enabled="true"/>
+  </region>
+  <region name="regReportingInfoXRefHistory">
+    <region-attributes scope="distributed-ack" data-policy="persistent-replicate" disk-store-name="regReportingInfoXRefHistoryDiskStore" disk-synchronous="false" cloning-enabled="true"/>
+  </region>
+  <region name="riskBudgetCorrelationMatrix">
+    <region-attributes scope="distributed-ack" data-policy="persistent-replicate" disk-store-name="riskBudgetCorrelationMatrixDiskStore" disk-synchronous="false" cloning-enabled="true"/>
+        <index name="riskBudgetCorrelationMatrix_correlationMatrixId" from-clause="/riskBudgetCorrelationMatrix index_from" expression="index_from.correlationMatrixId" type="range" />
+  </region>
+  <region name="riskBudgetCorrelationMatrixHistory">
+    <region-attributes scope="distributed-ack" data-policy="persistent-replicate" disk-store-name="riskBudgetCorrelationMatrixHistoryDiskStore" disk-synchronous="false" cloning-enabled="true"/>
+        <index name="riskBudgetCorrelationMatrixHistory_correlationMatrixId" from-clause="/riskBudgetCorrelationMatrixHistory index_from" expression="index_from.correlationMatrixId" type="range" />
+  </region>
+  <region name="riskBudgetInformationRatio">
+    <region-attributes scope="distributed-ack" data-policy="persistent-replicate" disk-store-name="riskBudgetInformationRatioDiskStore" disk-synchronous="false" cloning-enabled="true"/>
+        <index name="riskBudgetInformationRatio_informationRatioId" from-clause="/riskBudgetInformationRatio index_from" expression="index_from.informationRatioId" type="range" />
+  </region>
+  <region name="riskBudgetInformationRatioHistory">
+    <region-attributes scope="distributed-ack" data-policy="persistent-replicate" disk-store-name="riskBudgetInformationRatioHistoryDiskStore" disk-synchronous="false" cloning-enabled="true"/>
+        <index name="riskBudgetInformationRatioHistory_informationRatioId" from-clause="/riskBudgetInformationRatioHistory index_from" expression="index_from.informationRatioId" type="range" />
+  </region>
+  <region name="ruleQuery">
+    <region-attributes scope="distributed-ack" data-policy="persistent-replicate" disk-store-name="ruleQueryDiskStore" disk-synchronous="false" cloning-enabled="true"/>
+  </region>
+  <region name="ruleQueryHistory">
+    <region-attributes scope="distributed-ack" data-policy="persistent-replicate" disk-store-name="ruleQueryHistoryDiskStore" disk-synchronous="false" cloning-enabled="true"/>
+  </region>
+  <region name="segment">
+    <region-attributes scope="distributed-ack" data-policy="persistent-replicate" disk-store-name="segmentDiskStore" disk-synchronous="false" cloning-enabled="true"/>
+        <index name="segment_partyID" from-clause="/segment s, s.parties index_from" expression="index_from.partyID" type="range" />
+  </region>
+  <region name="segmentHistory">
+    <region-attributes scope="distributed-ack" data-policy="persistent-replicate" disk-store-name="segmentHistoryDiskStore" disk-synchronous="false" cloning-enabled="true"/>
+        <index name="segmentHistory_partyID" from-clause="/segmentHistory s, s.parties index_from" expression="index_from.partyID" type="range" />
+  </region>
+  <region name="stepAllocation">
+    <region-attributes scope="distributed-ack" data-policy="persistent-replicate" disk-store-name="stepAllocationDiskStore" disk-synchronous="false" cloning-enabled="true"/>
+  </region>
+  <region name="stepFill">
+    <region-attributes scope="distributed-ack" data-policy="persistent-replicate" disk-store-name="stepFillDiskStore" disk-synchronous="false" cloning-enabled="true"/>
+  </region>
+  <region name="stepProductBlock">
+    <region-attributes scope="distributed-ack" data-policy="persistent-replicate" disk-store-name="stepProductBlockDiskStore" disk-synchronous="false" cloning-enabled="true"/>
+  </region>
+  <region name="subActivity">
+    <region-attributes scope="distributed-ack" data-policy="persistent-replicate" disk-store-name="subActivityDiskStore" disk-synchronous="false" cloning-enabled="true"/>
+  </region>
+  <region name="subActivityHistory">
+   <region-attributes scope="distributed-ack" data-policy="persistent-replicate" disk-store-name="subActivityHistoryDiskStore" disk-synchronous="false" cloning-enabled="true"/>
+  </region>
+  <region name="targetAllocation">
+    <region-attributes scope="distributed-ack" data-policy="persistent-replicate" disk-store-name="targetAllocationDiskStore" disk-synchronous="false" cloning-enabled="true"/>
+        <index name="targetAllocation_orderID" from-clause="/targetAllocation index_from" expression="index_from.orderID" type="range" />
+        <index name="targetAllocation_targetAllocID" from-clause="/targetAllocation index_from" expression="index_from.targetAllocID" type="range" />
+  </region>
+  <region name="targetAllocationHistory">
+    <region-attributes scope="distributed-ack" data-policy="persistent-replicate" disk-store-name="targetAllocationHistoryDiskStore" disk-synchronous="false" cloning-enabled="true"/>
+        <index name="targetAllocationHistory_orderID" from-clause="/targetAllocationHistory index_from" expression="index_from.orderID" type="range" />
+        <index name="targetAllocationHistory_targetAllocID" from-clause="/targetAllocationHistory index_from" expression="index_from.targetAllocID" type="range" />
+  </region>
+ <region name="targetPortfolio">
+    <region-attributes scope="distributed-ack" data-policy="persistent-replicate" disk-store-name="targetPortfolioDiskStore" disk-synchronous="false" cloning-enabled="true"/>
+        <index name="targetPortfolio_externalReferenceID" from-clause="/targetPortfolio index_from" expression="index_from.externalReferenceID" type="range" />
+        <index name="targetPortfolio_partyID" from-clause="/targetPortfolio tp, tp.parties index_from" expression="index_from.partyID" type="range" />
+  </region>
+  <region name="targetPortfolioHistory">
+    <region-attributes scope="distributed-ack" data-policy="persistent-replicate" disk-store-name="targetPortfolioHistoryDiskStore" disk-synchronous="false" cloning-enabled="true"/>
+        <index name="targetPortfolioHistory_externalReferenceID" from-clause="/targetPortfolioHistory index_from" expression="index_from.externalReferenceID" type="range" />
+        <index name="targetPortfolioHistory_partyID" from-clause="/targetPortfolioHistory tp, tp.parties index_from" expression="index_from.partyID" type="range" />
+  </region>
+  <region name="testFiRegion">
+    <region-attributes scope="distributed-ack" data-policy="persistent-replicate" disk-store-name="testFiRegionDiskStore" disk-synchronous="false" cloning-enabled="true"/>
+  </region>
+  <region name="trade">
+    <region-attributes scope="distributed-ack" data-policy="persistent-replicate" disk-store-name="tradeDiskStore" disk-synchronous="false" cloning-enabled="true"/>
+        <index name="trade_execID" from-clause="/trade index_from" expression="index_from.execID" type="range" />
+        <index name="trade_tradeID" from-clause="/trade index_from" expression="index_from.tradeID" type="range" />
+  </region>
+  <region name="tradeHistory">
+    <region-attributes scope="distributed-ack" data-policy="persistent-replicate" disk-store-name="tradeHistoryDiskStore" disk-synchronous="false" cloning-enabled="true"/>
+        <index name="tradeHistory_execID" from-clause="/tradeHistory index_from" expression="index_from.execID" type="range" />
+        <index name="tradeHistory_tradeID" from-clause="/tradeHistory index_from" expression="index_from.tradeID" type="range" />
+  </region>
+  <region name="tradeLeg">
+    <region-attributes scope="distributed-ack" data-policy="persistent-replicate" disk-store-name="tradeLegDiskStore" disk-synchronous="false" cloning-enabled="true"/>
+        <index name="tradeLeg_externalReferenceID" from-clause="/tradeLeg index_from" expression="index_from.externalReferenceID" type="range" />
+        <index name="tradeLeg_tradeID" from-clause="/tradeLeg index_from" expression="index_from.tradeID" type="range" />
+        <index name="tradeLeg_tradeLegID" from-clause="/tradeLeg index_from" expression="index_from.tradeLegID" type="range" />
+        <index name="tradeLeg_tradeLegStatus" from-clause="/tradeLeg index_from" expression="index_from.tradeLegStatus" type="range" />
+  </region>
+  <region name="tradeLegHistory">
+    <region-attributes scope="distributed-ack" data-policy="persistent-replicate" disk-store-name="tradeLegHistoryDiskStore" disk-synchronous="false" cloning-enabled="true"/>
+        <index name="tradeLegHistory_tradeID" from-clause="/tradeLegHistory index_from" expression="index_from.tradeID" type="range" />
+        <index name="tradeLegHistory_tradeLegID" from-clause="/tradeLegHistory index_from" expression="index_from.tradeLegID" type="range" />
+  </region>
+  <region name="validationIssue">
+    <region-attributes scope="distributed-ack" data-policy="persistent-replicate" disk-store-name="validationIssueDiskStore" disk-synchronous="false" cloning-enabled="true"/>
+        <index name="validationIssue_eventID" from-clause="/validationIssue index_from" expression="index_from.eventID" type="range" />
+        <index name="validationIssue_validationIssueID" from-clause="/validationIssue index_from" expression="index_from.validationIssueID" type="range" />
+  </region>
+  <region name="validationIssueHistory">
+    <region-attributes scope="distributed-ack" data-policy="persistent-replicate" disk-store-name="validationIssueHistoryDiskStore" disk-synchronous="false" cloning-enabled="true"/>
+        <index name="validationIssueHistory_primaryEntityID" from-clause="/validationIssueHistory index_from" expression="index_from.primaryEntityID" type="range" />
+        <index name="validationIssueHistory_validationID" from-clause="/validationIssueHistory index_from" expression="index_from.validationID" type="range" />
+        <index name="validationIssueHistory_validationIssueID" from-clause="/validationIssueHistory index_from" expression="index_from.validationIssueID" type="range" />
+  </region>
+  <region name="validationIssueXRef">
+    <region-attributes scope="distributed-ack" data-policy="persistent-replicate" disk-store-name="validationIssueXRefDiskStore" disk-synchronous="false" cloning-enabled="true"/>
+        <index name="validationIssueXRef_eventID" from-clause="/validationIssueXRef index_from" expression="index_from.eventID" type="range" />
+        <index name="validationIssueXRef_validationIssueID" from-clause="/validationIssueXRef index_from" expression="index_from.validationIssueID" type="range" />
+        <index name="validationIssueXRef_validationIssueXRefID" from-clause="/validationIssueXRef index_from" expression="index_from.validationIssueXRefID" type="range" />
+  </region>
+  <region name="validationIssueXRefHistory">
+    <region-attributes scope="distributed-ack" data-policy="persistent-replicate" disk-store-name="validationIssueXRefHistoryDiskStore" disk-synchronous="false" cloning-enabled="true"/>
+  </region>
+  <region name="validationResult">
+    <region-attributes scope="distributed-ack" data-policy="persistent-replicate" disk-store-name="validationResultDiskStore" disk-synchronous="false" cloning-enabled="true"/>
+        <index name="validationResult_objectID" from-clause="/validationResult index_from" expression="index_from.objectID" type="range" />
+        <index name="validationResult_validationID" from-clause="/validationResult index_from" expression="index_from.validationID" type="range" />
+  </region>
+  <region name="validationResultHistory">
+    <region-attributes scope="distributed-ack" data-policy="persistent-replicate" disk-store-name="validationResultHistoryDiskStore" disk-synchronous="false" cloning-enabled="true"/>
+        <index name="validationResultHistory_validationID" from-clause="/validationResultHistory index_from" expression="index_from.validationID" type="range" />
+  </region>
+  <region name="virtualObject">
+    <region-attributes scope="distributed-ack" data-policy="persistent-replicate" disk-store-name="virtualObjectDiskStore" disk-synchronous="false" cloning-enabled="true"/>
+        <index name="virtualObject_entityId" from-clause="/virtualObject vo, vo.linkedEntities index_from" expression="index_from.entityId" type="range" />
+        <index name="virtualObject_eventID" from-clause="/virtualObject index_from" expression="index_from.eventID" type="range" />
+        <index name="virtualObject_region" from-clause="/virtualObject vo, vo.linkedEntities index_from" expression="index_from.region" type="range" />
+  </region>
+  <region name="virtualObjectHistory">
+    <region-attributes scope="distributed-ack" data-policy="persistent-replicate" disk-store-name="virtualObjectHistoryDiskStore" disk-synchronous="false" cloning-enabled="true"/>
+        <index name="virtualObjectHistory_eventID" from-clause="/virtualObjectHistory index_from" expression="index_from.eventID" type="range" />
+  </region>
+  <resource-manager critical-heap-percentage="98" eviction-heap-percentage="60"/>
+</cache>
+

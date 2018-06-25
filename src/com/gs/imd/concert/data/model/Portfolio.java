@@ -17,6 +17,10 @@ public class Portfolio implements PdxSerializable {
   public String eventID;
   public String refeedEventID;
   public String rootEventID;
+  public String cacheUpdateTime;
+  public String cepId;
+  public String eventId;
+  public String eventName;
   public String clOrderID;
   public String execID;
   public String externalExecID;
@@ -44,6 +48,7 @@ public class Portfolio implements PdxSerializable {
   public String tradeID;
   public String tradeLegID;
   public String tradeLegStatus;
+  public String primaryEntityID;
   public String validationIssueID;
   public String validationIssueXRefID;
   public String objectID;
@@ -68,6 +73,10 @@ public class Portfolio implements PdxSerializable {
     this.eventID = randomString;
     this.refeedEventID = randomString;
     this.rootEventID = randomString;
+    this.cacheUpdateTime = randomString;
+    this.cepId = randomString;
+    this.eventId = randomString;
+    this.eventName = randomString;
     this.clOrderID = randomString;
     this.execID = randomString;
     this.externalExecID = randomString;
@@ -95,6 +104,7 @@ public class Portfolio implements PdxSerializable {
     this.tradeID = randomString;
     this.tradeLegID = randomString;
     this.tradeLegStatus = randomString;
+    this.primaryEntityID = randomString;
     this.validationIssueID = randomString;
     this.validationIssueXRefID = randomString;
     this.objectID = randomString;
@@ -117,6 +127,10 @@ public class Portfolio implements PdxSerializable {
     pdxWriter.writeString("refeedEventID",refeedEventID);
     pdxWriter.writeString("rootEventID",rootEventID);
     pdxWriter.writeString("clOrderID",clOrderID);
+    pdxWriter.writeString("cacheUpdateTime",cacheUpdateTime);
+    pdxWriter.writeString("cepId",cepId);
+    pdxWriter.writeString("eventId",eventId);
+    pdxWriter.writeString("eventName",eventName);
     pdxWriter.writeString("execID",execID);
     pdxWriter.writeString("externalExecID",externalExecID);
     pdxWriter.writeString("orderID",orderID);
@@ -143,6 +157,7 @@ public class Portfolio implements PdxSerializable {
     pdxWriter.writeString("tradeID",tradeID);
     pdxWriter.writeString("tradeLegID",tradeLegID);
     pdxWriter.writeString("tradeLegStatus",tradeLegStatus);
+    pdxWriter.writeString("primaryEntityID",primaryEntityID);
     pdxWriter.writeString("validationIssueID",validationIssueID);
     pdxWriter.writeString("validationIssueXRefID",validationIssueXRefID);
     pdxWriter.writeString("objectID",objectID);
@@ -166,6 +181,12 @@ public class Portfolio implements PdxSerializable {
     this.refeedEventID = pdxReader.readString("refeedEventID");
     this.rootEventID = pdxReader.readString("rootEventID");
     this.clOrderID = pdxReader.readString("clOrderID");
+
+    this.cacheUpdateTime = pdxReader.readString("cacheUpdateTime");
+    this.cepId = pdxReader.readString("cepId");
+    this.eventId = pdxReader.readString("eventId");
+    this.eventName = pdxReader.readString("eventName");
+
     this.execID = pdxReader.readString("execID");
     this.externalExecID = pdxReader.readString("externalExecID");
     this.orderID = pdxReader.readString("orderID");
@@ -192,6 +213,7 @@ public class Portfolio implements PdxSerializable {
     this.tradeID = pdxReader.readString("tradeID");
     this.tradeLegID = pdxReader.readString("tradeLegID");
     this.tradeLegStatus = pdxReader.readString("tradeLegStatus");
+    this.primaryEntityID = pdxReader.readString("primaryEntityID");
     this.validationIssueID = pdxReader.readString("validationIssueID");
     this.validationIssueXRefID = pdxReader.readString("validationIssueXRefID");
     this.objectID = pdxReader.readString("objectID");

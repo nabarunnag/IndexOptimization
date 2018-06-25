@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Licensed to the Apache Software Foundation (ASF) under one or more
+	contributor license agreements.  See the NOTICE file distributed with
+	this work for additional information regarding copyright ownership.
+	The ASF licenses this file to You under the Apache License, Version 2.0
+	(the "License"); you may not use this file except in compliance with
+	the License.  You may obtain a copy of the License at
+
+	     http://www.apache.org/licenses/LICENSE-2.0
+
+	Unless required by applicable law or agreed to in writing, software
+	distributed under the License is distributed on an "AS IS" BASIS,
+	WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+	See the License for the specific language governing permissions and
+	limitations under the License.
+-->
+<client-cache
+        xmlns="http://geode.apache.org/schema/cache"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://geode.apache.org/schema/cache http://geode.apache.org/schema/cache/cache-1.0.xsd"
+        version="1.0">
+    <pool name="client" subscription-enabled="true">
+        <locator host="10.32.108.248" port="41111"/>
+    </pool>
+    <region name="activity">
+        <region-attributes refid="PROXY"/>
+    </region>
+    <region name="activityHistory">
+        <region-attributes refid="PROXY"/>
+    </region>
+    <region name="alerts">
+        <region-attributes refid="PROXY"/>
+    </region>
+    <region name="alertsHistory">
+        <region-attributes refid="PROXY"/>
+    </region>
+    <region name="basket">
+        <region-attributes refid="PROXY"/>
+    </region>
+    <region name="basketHistory">
+        <region-attributes refid="PROXY"/>
+    </region>
+    <region name="basketXRef">
+        <region-attributes refid="PROXY"/>
+    </region>
+    <region name="checkPoint">
+        <region-attributes refid="PROXY"/>
+    </region>
+    <region name="clientPortfolio">
+        <region-attributes refid="PROXY"/>
+    </region>
+    <region name="clientPortfolioHistory">
+        <region-attributes refid="PROXY"/>
+    </region>
+    <region name="errorEvent">
+        <region-attributes refid="PROXY"/>
+    </region>
+    <region name="event">
+        <region-attributes refid="PROXY"/>
+    </region>
+    <region name="eventState">
+        <region-attributes refid="PROXY"/>
+    </region>
+    <region name="eventTransactionLog">
+        <region-attributes refid="PROXY"/>
+    </region>
+    <region name="eventTransactionLogHistory">
+        <region-attributes refid="PROXY"/>
+    </region>
+    <region name="execution">
+        <region-attributes refid="PROXY"/>
+    </region>
+    <region name="executionAllocation">
+        <region-attributes refid="PROXY"/>
+    </region>
+    <region name="executionAllocationHistory">
+        <region-attributes refid="PROXY"/>
+    </region>
+    <region name="executionHistory">
+        <region-attributes refid="PROXY"/>
+    </region>
+    <region name="externalIDXRef">
+        <region-attributes refid="PROXY"/>
+    </region>
+    <region name="fiAccountGroup">
+        <region-attributes refid="PROXY"/>
+    </region>
+    <region name="fiAccountGroupHistory">
+        <region-attributes refid="PROXY"/>
+    </region>
+    <region name="fiAccountRisk">
+        <region-attributes refid="PROXY"/>
+    </region>
+    <region name="fiAccountRiskHistory">
+        <region-attributes refid="PROXY"/>
+    </region>
+    <region name="messageSequence">
+        <region-attributes refid="PROXY"/>
+    </region>
+    <region name="note">
+        <region-attributes refid="PROXY"/>
+    </region>
+    <region name="noteHistory">
+        <region-attributes refid="PROXY"/>
+    </region>
+    <region name="noteXRef">
+        <region-attributes refid="PROXY"/>
+    </region>
+    <region name="notificationCheckPoint">
+        <region-attributes refid="PROXY"/>
+    </region>
+    <region name="notificationSubscriptionState">
+        <region-attributes refid="PROXY"/>
+    </region>
+    <region name="order">
+        <region-attributes refid="PROXY"/>
+    </region>
+    <region name="orderEvent">
+        <region-attributes refid="PROXY"/>
+    </region>
+    <region name="orderHistory">
+        <region-attributes refid="PROXY"/>
+    </region>
+    <region name="partyXRef">
+        <region-attributes refid="PROXY"/>
+    </region>
+    <region name="partyXRefHistory">
+        <region-attributes refid="PROXY"/>
+    </region>
+    <region name="planning">
+        <region-attributes refid="PROXY"/>
+    </region>
+    <region name="planningArchive">
+        <region-attributes refid="PROXY"/>
+    </region>
+    <region name="productDetail">
+        <region-attributes refid="PROXY"/>
+    </region>
+    <region name="productIdXRef">
+        <region-attributes refid="PROXY"/>
+    </region>
+    <region name="productRegulation">
+        <region-attributes refid="PROXY"/>
+    </region>
+    <region name="productSector">
+        <region-attributes refid="PROXY"/>
+    </region>
+    <region name="productSummary">
+        <region-attributes refid="PROXY"/>
+    </region>
+    <region name="proposedOrder">
+        <region-attributes refid="PROXY"/>
+    </region>
+    <region name="proposedOrderHistory">
+        <region-attributes refid="PROXY"/>
+    </region>
+    <region name="publishedMessage">
+        <region-attributes refid="PROXY"/>
+    </region>
+    <region name="publishedMessages">
+        <region-attributes refid="PROXY"/>
+    </region>
+    <region name="quote">
+        <region-attributes refid="PROXY"/>
+    </region>
+    <region name="quoteHistory">
+        <region-attributes refid="PROXY"/>
+    </region>
+    <region name="rebalanceActivity">
+        <region-attributes refid="PROXY"/>
+    </region>
+    <region name="rebalanceActivityHistory">
+        <region-attributes refid="PROXY"/>
+    </region>
+    <region name="regReport">
+        <region-attributes refid="PROXY"/>
+    </region>
+    <region name="regReportingInfoXRef">
+        <region-attributes refid="PROXY"/>
+    </region>
+    <region name="regReportingInfoXRefHistory">
+        <region-attributes refid="PROXY"/>
+    </region>
+    <region name="riskBudgetCorrelationMatrix">
+        <region-attributes refid="PROXY"/>
+    </region>
+    <region name="riskBudgetCorrelationMatrixHistory">
+        <region-attributes refid="PROXY"/>
+    </region>
+    <region name="riskBudgetInformationRatio">
+        <region-attributes refid="PROXY"/>
+    </region>
+    <region name="riskBudgetInformationRatioHistory">
+        <region-attributes refid="PROXY"/>
+    </region>
+    <region name="ruleQuery">
+        <region-attributes refid="PROXY"/>
+    </region>
+    <region name="ruleQueryHistory">
+        <region-attributes refid="PROXY"/>
+    </region>
+    <region name="segment">
+        <region-attributes refid="PROXY"/>
+    </region>
+    <region name="segmentHistory">
+        <region-attributes refid="PROXY"/>
+    </region>
+    <region name="stepAllocation">
+        <region-attributes refid="PROXY"/>
+    </region>
+    <region name="stepFill">
+        <region-attributes refid="PROXY"/>
+    </region>
+    <region name="stepProductBlock">
+        <region-attributes refid="PROXY"/>
+    </region>
+    <region name="subActivity">
+        <region-attributes refid="PROXY"/>
+    </region>
+    <region name="subActivityHistory">
+        <region-attributes refid="PROXY"/>
+    </region>
+    <region name="targetAllocation">
+        <region-attributes refid="PROXY"/>
+    </region>
+    <region name="targetAllocationHistory">
+        <region-attributes refid="PROXY"/>
+    </region>
+    <region name="targetPortfolio">
+        <region-attributes refid="PROXY"/>
+    </region>
+    <region name="targetPortfolioHistory">
+        <region-attributes refid="PROXY"/>
+    </region>
+    <region name="testFiRegion">
+        <region-attributes refid="PROXY"/>
+    </region>
+    <region name="trade">
+        <region-attributes refid="PROXY"/>
+    </region>
+    <region name="tradeHistory">
+        <region-attributes refid="PROXY"/>
+    </region>
+    <region name="tradeLeg">
+        <region-attributes refid="PROXY"/>
+    </region>
+    <region name="tradeLegHistory">
+        <region-attributes refid="PROXY"/>
+    </region>
+    <region name="validationIssue">
+        <region-attributes refid="PROXY"/>
+    </region>
+    <region name="validationIssueHistory">
+        <region-attributes refid="PROXY"/>
+    </region>
+    <region name="validationIssueXRef">
+        <region-attributes refid="PROXY"/>
+    </region>
+    <region name="validationIssueXRefHistory">
+        <region-attributes refid="PROXY"/>
+    </region>
+    <region name="validationResult">
+        <region-attributes refid="PROXY"/>
+    </region>
+    <region name="validationResultHistory">
+        <region-attributes refid="PROXY"/>
+    </region>
+    <region name="virtualObject">
+        <region-attributes refid="PROXY"/>
+    </region>
+    <region name="virtualObjectHistory">
+        <region-attributes refid="PROXY"/>
+    </region>
+</client-cache>
